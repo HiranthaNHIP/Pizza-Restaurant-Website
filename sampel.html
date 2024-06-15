@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript to include header and footer -->
+    <script src="header_footer.js"></script>
+
+    <script src="validation.js"></script>
+
+</head>
+</head>
+<body>
+    
+     <!-- Include the header -->
+     <div class="header-placeholder" data-include="header.html"></div>
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" style="height: 500px;">
+        <div class="carousel-inner" style="height: 500px;">
+          <div class="carousel-item active">
+            <img src="preload image1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="preload image2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="preload image3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      <div>
+
+
+
+
+        
+
+
+        <form action="https://www.nibmworldwide.com/" class="form-left"  name="RSfrom" onsubmit="return(validate())">
+            <h2 class="headline-1 text-center">Online Reservation</h2>
+
+            <p class="form-text text-center">
+              Booking request
+              <a href="tel:+88123123456" class="link">(+94) 75 222 8800</a>
+              or fill out the order form
+            </p>
+            
+
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="off"
+                class="input-field"
+                id="cname"
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                autocomplete="off"
+                class="input-field"
+                id="telephone"
+                value="+94"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                <select name="person" class="input-field">
+                  <option value="-1">Num Of Guest</option>
+                  <option value="1-person">1 Person</option>
+                  <option value="2-person">2 Person</option>
+                  <option value="3-person">3 Person</option>
+                  <option value="4-person">4 Person</option>
+                  <option value="5-person">5 Person</option>
+                  <option value="6-person">6 Person</option>
+                  <option value="7-person">7 Person</option>
+                </select>
+
+                <i class="fa-solid fa-person fa-beat-fade" style="color: #ffffff;position: relative; bottom: 42px; left: 180px;"></i>
+              </div>
+
+              <div class="icon-wrapper">
+                
+
+                <input
+                  type="date"
+                  name="reservation-date"
+                  class="input-field"
+                  id="Date"
+
+                />
+
+               
+                <i class="fa-solid fa-calendar fa-beat-fade" style="color: #ffffff; position: relative; bottom: 42px; left: 180px;"></i>
+              </div>
+
+              <div class="icon-wrapper">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                <select name="time" class="input-field" id="Time">
+                  
+                  <option value="-1" selected>Select Time</option>  
+                  <option value="012:00am">12 : 00 am</option>
+                  <option value="01:00pm">01 : 00 pm</option>
+                  <option value="02:00pm">02 : 00 pm</option>
+                  <option value="03:00pm">03 : 00 pm</option>
+                  <option value="04:00pm">04 : 00 pm</option>
+                  <option value="05:00pm">05 : 00 pm</option>
+                  <option value="06:00pm">06 : 00 pm</option>
+                  <option value="07:00pm">07 : 00 pm</option>
+                  <option value="08:00pm">08 : 00 pm</option>
+                  <option value="09:00pm">09 : 00 pm</option>
+                  <option value="10:00pm">10 : 00 pm</option>
+                </select>
+
+                <i class="fa-solid fa-clock fa-beat-fade" style="color: #ffffff ;position: relative; bottom: 42px; left: 180px;"></i>
+                
+              </div>
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              autocomplete="off"
+              class="input-field"
+            ></textarea>
+
+            <button type="submit" class="btn btn-secondary" id="submitbtn" >
+              <span class="text text-1">Book A Table</span>
+
+              <span class="text text-2" aria-hidden="true">Book A Table</span>
+            </button>
+          </form>
+
+
+          
+      </div>
+
+      <script src="validation.js"></script>
+      
+    <!-- Include the footer -->
+    <div class="footer-placeholder" data-include="footer.html"></div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

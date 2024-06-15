@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="socialmedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <!-- social media icon links is below-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+
+     <!-- JavaScript to include header and footer -->
+     <script src="header_footer.js"></script>
+     <script src="validation.js"></script>
+
+
+     <!--this java script use to connect sms gateway-->
+      <script src="sms.js"></script>
+
+
+      <link rel="shortcut icon" href="favicon logo.png" type="image/svg+xml" />
+      <title> Table Reservation</title>
+    
+  </head>
+  <body id="top">
+    <!--valdation js-->
+    
+
+     <!-- Include the header -->
+     <div class="header-placeholder" data-include="header.html"></div>
+
+
+
+    
+     <div style=" position: relative;top: 65px;  width: 100%; height: 550px; background-color:#e1c28f " >
+      <img src="assets/images/backimg.jpg" style=" width: 100%;"  alt="">
+
+
+      <!--location icon code and google location-->
+      <a href="https://www.google.com/search?sca_esv=562236339&sxsrf=AB5stBhnfNoagCFJiqDCPphcxL24iTn-rA:1693690996389&q=arthur%27s+pizza&npsic=0&rflfq=1&rldoc=1&rllag=6876522,79870739,3886&tbm=lcl&sa=X&ved=2ahUKEwj1w8vR8oyBAxWMzTgGHfdbAkoQtgN6BAhNEAI&biw=1366&bih=625&dpr=1#rlfi=hd:;si:14064836568011421585,l,Cg5hcnRodXIncyBwaXp6YSIDiAEBSJPg9uycqoCACFoYEAAQARgAGAEiDmFydGh1cidzIHBpenphkgEQcGl6emFfcmVzdGF1cmFudKoBShABKhIiDmFydGh1cidzIHBpenphKAAyHhABIhoNOI2uSWWzVPkb-v7tWa6BcnbkrV4hzJGsTzISEAIiDmFydGh1cidzIHBpenph;mv:[[6.91657427301191,79.95182348867658],[6.836473811350522,79.78943182607891]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4" target="_blank"><i class="fa-solid fa-location-dot fa-beat fa-2xl" style="position: relative;bottom: 50px; left: 1200px;      color: #ffe97a; " ></i></a>
+      
+
+      <div style="height: 400px;">
+        
+
+      </div>
+    </div>
+
+    <!-- 
+        - #RESERVATION
+      -->
+      <div style="background-color:white;height: 3px;width: 100%; position: relative; bottom: 4px;"></div>
+
+    <section class="reservation" style=" position: relative;bottom: 2px;   background-color:rgb(20, 20, 20) ">
+      <div class="container" style="background-color: rgb(20, 20, 20);">
+        <div class="form reservation-form bg-black-10" style="background-color: #0d0c0c;" 
+         >
+         <div>
+
+
+
+
+        
+
+
+          <form action="insert.php" class="form-left"  name="RSfrom" onsubmit="return(validate())" method="post">
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+  
+              <p class="form-text text-center">
+                Booking request
+                <a href="tel:+88123123456" class="link">(+94) 75 222 8800</a>
+                or fill out the order form
+              </p>
+              
+  
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  autocomplete="off"
+                  class="input-field"
+                  id="cname"
+                />
+  
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  autocomplete="off"
+                  class="input-field"
+                  id="telephone"
+                  value="+94"
+                />
+              </div>
+  
+              <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+  
+                  <select name="person" class="input-field">
+                    <option value="-1">Num Of Guest</option>
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+  
+                  <i class="fa-solid fa-person fa-beat-fade" style="color: #ffffff;position: relative; bottom: 42px; left: 180px;"></i>
+                </div>
+  
+                <div class="icon-wrapper">
+                  
+  
+                  <input
+                    type="date"
+                    name="reservation-date"
+                    class="input-field"
+                    id="Date"
+  
+                  />
+  
+                 
+                  <i class="fa-solid fa-calendar fa-beat-fade" style="color: #ffffff; position: relative; bottom: 42px; left: 180px;"></i>
+                </div>
+  
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+  
+                  <select name="time" class="input-field" id="Time">
+                    
+                    <option value="-1" selected>Select Time</option>  
+                    <option value="12:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+  
+                  <i class="fa-solid fa-clock fa-beat-fade" style="color: #ffffff ;position: relative; bottom: 42px; left: 180px;"></i>
+                  
+                </div>
+              </div>
+  
+              <textarea
+                name="message"
+                placeholder="Message"
+                autocomplete="off"
+                class="input-field"
+              ></textarea>
+  
+              <button type="submit" class="btn btn-secondary" id="submitbtn" >
+                <span class="text text-1">Book A Table</span>
+  
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+            </form>
+  
+  
+            
+        </div>
+
+          <div
+            class="form-right text-center"
+            style="background-image: url('./assets/images/form-pattern.png')"
+          >
+            <h2 class="headline-1 text-center">Contact Us</h2>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a
+              href="tel:+88123123456"
+              class="body-1 contact-number hover-underline"
+              >(+94) 75 222 8800</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Location</p>
+
+            <address class="body-4">
+               No:23 Mount Lavania, Havelock Road & Horton Place
+            </address>
+
+            <p class="contact-label">Lunch Time</p>
+
+            <p class="body-4">
+              Monday to Sunday <br />
+              11.00 am - 2.30pm
+            </p>
+
+            <p class="contact-label">Dinner Time</p>
+
+            <p class="body-4">
+              Monday to Sunday <br />
+              05.00 pm - 11.00pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="background-color: white;height: 3px;width: 100%; position: relative; bottom: 4px;"></div>
+
+
+
+    <!-- Include the footer -->
+    <div class="footer-placeholder" data-include="footer.html" style="position: relative; bottom: 3px;"></div>
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="header.js"></script>
+    <script src="validation.js"></script>
+    <script src="sms.js"></script>
+   
+   
+  </body>
+</html>

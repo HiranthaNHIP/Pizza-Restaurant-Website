@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="socialmedia.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <!-- social media icon links is below-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/contactus.css" />
+    
+
+    <!-- JavaScript to include header and footer -->
+    <script src="header_footer.js"></script>
+    <script src="validation.js"></script>
+
+    <!--this java script use to connect sms gateway-->
+    <script src="sms.js"></script>
+
+    <link rel="shortcut icon" href="favicon logo.png" type="image/svg+xml" />
+    <title>Contact Us</title>
+  </head>
+  <body id="top">
+    <!--valdation js-->
+
+    <!-- Include the header -->
+    <div class="header-placeholder" data-include="header.html"></div>
+
+    <div style=" position: relative ;top: 40px; width: 100%; height: 550px; background-color: #e1c28f">
+      <img src="imagecontact.png" style="width: 100%" alt="" />
+
+      
+
+      <!--location icon code and google location-->
+      <a
+        href="https://www.google.com/search?sca_esv=562236339&sxsrf=AB5stBhnfNoagCFJiqDCPphcxL24iTn-rA:1693690996389&q=arthur%27s+pizza&npsic=0&rflfq=1&rldoc=1&rllag=6876522,79870739,3886&tbm=lcl&sa=X&ved=2ahUKEwj1w8vR8oyBAxWMzTgGHfdbAkoQtgN6BAhNEAI&biw=1366&bih=625&dpr=1#rlfi=hd:;si:14064836568011421585,l,Cg5hcnRodXIncyBwaXp6YSIDiAEBSJPg9uycqoCACFoYEAAQARgAGAEiDmFydGh1cidzIHBpenphkgEQcGl6emFfcmVzdGF1cmFudKoBShABKhIiDmFydGh1cidzIHBpenphKAAyHhABIhoNOI2uSWWzVPkb-v7tWa6BcnbkrV4hzJGsTzISEAIiDmFydGh1cidzIHBpenph;mv:[[6.91657427301191,79.95182348867658],[6.836473811350522,79.78943182607891]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"
+        target="_blank"
+        ><i
+          class="fa-solid fa-location-dot fa-beat fa-2xl"
+          style="position: relative; bottom: 40px; left: 1200px; color: red"
+        ></i
+      ></a>
+
+      
+    </div>
+<section style="height: 590px; background-color: black; position: relative;bottom: 40px;;">
+  <div class="form-container" style="position: relative; top: 50px">
+    <div class="form">
+      <form action="https://formspree.io/f/mzblgjzy" method="post" name="cuform" onsubmit="return(formvalidate())">
+        <h4 class="headline-1 text-center" style="position: relative; bottom: 20px;">Get In Touch</h4>
+        <input placeholder="Name" type="text" name="Name" class="input" >
+        <input placeholder="Email" id="mail" name="Email" type="email" class="input">
+      <textarea placeholder="Say Hello" rows="10" cols="30" id="Message" name="Message" class="textarea"></textarea>
+          <div class="button-container">
+          
+          <button class="send-button" id="send" type="submit">Send</button>
+      </form>
+       
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="form-right text-center"
+    style="
+      width: 500px;position: relative;bottom: 500px; height: 570px;margin-top: 30px;
+      background-image: url('./assets/images/form-pattern.png');
+    "
+  >
+    <div style="position: relative;bottom: 50px;">
+      <h2 class="headline-1 text-center">Contact Us</h2>
+
+    <p class="contact-label">Booking Request</p>
+
+    <a href="tel:+88123123456" class="body-1 contact-number hover-underline"
+      >(+94) 75 222 8800</a
+    >
+
+    <div class="separator"></div>
+
+    <p class="contact-label">Location</p>
+
+    <address class="body-4">
+      No:23 Mount Lavania, Havelock Road & Horton Place
+    </address>
+
+    <p class="contact-label">Lunch Time</p>
+
+    <p class="body-4">
+      Monday to Sunday <br />
+      11.00 am - 2.30pm
+    </p>
+
+    <p class="contact-label">Dinner Time</p>
+
+    <p class="body-4">
+      Monday to Sunday <br />
+      05.00 pm - 11.00pm
+    </p>
+    </div>
+  </div>
+
+</section>
+    
+    
+    <div style="position: relative; bottom: 35px;">
+      <iframe
+      
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.4062812585676!2d79.86422007335348!3d6.84179931938603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b1bb81c329b%3A0xc3305657043eb791!2sArthur&#39;s%20Pizzeria%20-%20Mount%20Lavinia!5e0!3m2!1sen!2slk!4v1693936373308!5m2!1sen!2slk"
+        width="1260"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        
+      ></iframe>
+    </div>
+
+    <!-- Include the footer -->
+    <div class="footer-placeholder" data-include="footer.html" style="position: relative; bottom: 45px;"></div>
+
+
+
+
+   
+
+    <script src="./assets/js/script.js"></script>
+    <script src="header.js"></script>
+    <script src="validation.js"></script>
+    <script src="sms.js"></script>
+  </body>
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Arthur's Pizzeria</title>
+    <meta name="title" content="Arthurs Pizza - Amazing & Delicious Pizza" />
+    
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="favicon logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="socialmedia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- footer adding js link-->
+    <script src="footer.js"></script>
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/preload1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/features-icon-2.png" />
+    <link rel="preload" as="image" href="image2.jpg" >
+
+
+
+    
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text" >Loading</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            Mount Lavania, Havelock Road & Horton Place
+          </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 11.00 am to 12.00 pm</span>
+        </div>
+
+        <a href="tel:+11234567890" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span"> (+94) 75 222 8800</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:8hiranthai@gmail.com"  class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Arthurs_Pizza@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container1">
+        <a href="index.html" class="logo">
+          <img
+            src="arthurs logo.png"
+            width="160"
+            height="50"
+            alt="Grilli - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="index.html" class="logo">
+            <img
+              src="arthurs logo.png"
+              width="160"
+              height="50"
+              alt="arthurs logo - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="aboutus.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#promo" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Promotions</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              Mount Lavania, Havelock Road & Horton Place
+            </address>
+
+            <p class="body-4 navbar-text">Open: 11.00 am - 12.00pm</p>
+
+            <a href="8hiranthai@gmail.com" class="body-4 sidebar-link"
+              >Authrus_pizza@gmail.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a
+              href="tel:+88123123456"
+              class="body-1 contact-number hover-underline"
+            >
+              (+94)77 222 8800
+            </a>
+          </div>
+        </nav>
+
+        <a href="reservation.html" class="btn btn-secondary">
+          <span class="text text-1">Find A Table</span>
+
+          <span class="text text-2" aria-hidden="true">Find A Table</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="assets\images\preload image1.png"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Tradational & Hygine
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                More Than a Pizza It's<br />
+                an Experience
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="menu.html" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="menu images\images\preload image4.png"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                delightful experience
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Your Perfect Slice  <br />
+                Awaits
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Melt-in-Your-Mouth Pizzas, Made to Order
+              </p>
+
+              <a href="menu.html" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="menu images\images\preload image3.png"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                amazing & delicious
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                A World of Flavors in  <br />
+                Every Slice
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Bringing Families Together, One Slice at a Time
+              </p>
+
+              <a href="menu.html" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <a href="reservation.html" class="hero-btn has-after">
+            <img
+              src="./assets/images/hero-icon.png"
+              width="48"
+              height="48"
+              alt="booking icon"
+            />
+
+            <span class="label-2 text-center span">Book A Table</span>
+          </a>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+            <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+            <p class="section-text">
+              Indulge in a symphony of flavors at our pizza paradise! Our menu categories are meticulously crafted to take your taste buds on an unforgettable journey. From
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="menu.html" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="assets/images/pizzaimg.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Pizzas</a>
+                    </h3>
+
+                    <a href="menu.html" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="menu images\images\appertisers.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Appetizers</a>
+                    </h3>
+
+                    <a href="menu.html" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="menu images\images\beverages.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Drinks</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim"
+            />
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+          </div>
+        </section>
+
+         <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features" style="background-image: url('backgroundimg1.png'); position: relative; bottom: 30px; height: 600px;" >
+        <div class="container">
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <i class="fa-solid fa-pizza-slice fa-beat fa-2xl" style="color: #ffd270; "></i>
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">
+                  Lorem Ipsum is simply dummy printing and typesetting.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <i class="fa-solid fa-seedling fa-beat fa-2xl" style="color: #ffe18f;"></i>
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">
+                  Lorem Ipsum is simply dummy printing and typesetting.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <i class="fa-solid fa-kitchen-set fa-beat fa-2xl" style="color: #ffe175;"></i>
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">
+                  Lorem Ipsum is simply dummy printing and typesetting.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <i class="fa-solid fa-cake-candles fa-beat fa-2xl" style="color: #ffd970;"></i>
+                </div>
+
+                <h3 class="title-2 card-title">Bithdays & Party</h3>
+
+                <p class="label-1 card-text">
+                  Lorem Ipsum is simply dummy printing and typesetting.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <img
+            src="./assets/images/shape-7.png"
+            width="208"
+            height="178"
+            loading="lazy"
+            alt="shape"
+            class="shape shape-1"
+          />
+
+          <img
+            src="./assets/images/shape-8.png"
+            width="120"
+            height="115"
+            loading="lazy"
+            alt="shape"
+            class="shape shape-2"
+          />
+        </div>
+      </section>
+
+
+        
+        <!-- 
+        - #feedbaks
+      -->
+
+        <section class="special-dish text-center" aria-labelledby="dish-label" style="width: 100%; position: relative;bottom: 25px;" >
+          <div class="special-dish-banner" >
+            
+            <video height="1200px" width="690px" autoplay muted  >
+                 <source src="vedio 2.mp4" type="video/mp4">
+
+                   </video>
+
+          </div>
+
+          <div class="special-dish-content bg-black-10" style="height: 1200px; width: 100%; position: relative; right: 36px;" >
+            <div class="container3" >
+              <img
+                src="./assets/images/badge-1.png"
+                width="28"
+                height="41"
+                loading="lazy"
+                alt="badge"
+                class="abs-img"
+              />
+
+              <p class="section-subtitle label-2" style="position: relative;bottom: 150px;">Customer Feedbacks</p>
+
+              <h2 class="headline-1 section-title" style="position: relative ;bottom: 120px;">Send Feedbacks</h2>
+
+              <p class="section-text" style="position: relative; bottom: 100px;">
+                
+               We value your thoughts! Share your feedback through TripAdvisor Website and help us enhance your dining experience. Your insights make a difference.
+              </p>
+
+             
+
+              <a href="https://www.tripadvisor.com/UserReviewEdit-g293962-d19898241-Arthur_s_Pizzeria-Colombo_Western_Province.html" target="_blank"  class="btn btn-primary" style="position: relative;bottom: 80px;">
+                <span class="text text-1">Feedback</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Sending...</span
+                >
+              </a>
+              <div class="rating" style="position: relative; right: 350px; bottom: 70px;">
+                <input value="5" name="rate" id="star5" type="radio">
+                <label title="text" for="star5"></label>
+                <input value="4" name="rate" id="star4" type="radio">
+                <label title="text" for="star4"></label>
+                <input value="3" name="rate" id="star3" type="radio" checked="">
+                <label title="text" for="star3"></label>
+                <input value="2" name="rate" id="star2" type="radio">
+                <label title="text" for="star2"></label>
+                <input value="1" name="rate" id="star1" type="radio">
+                <label title="text" for="star1"></label>
+              </div>
+              
+
+              <iframe width="480" height="250" src="https://www.youtube.com/embed/WXOKd1H4PeM?si=y1XY_jzNqqRqoqHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative;right: 50px; bottom: 40px;" ></iframe> 
+              <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #a5a5a5; text-align: center; font-size: 30px; position: relative; bottom: 40px;">Valueble customer Feedbacks</p>
+
+              <iframe width="480" height="250" src="https://www.youtube.com/embed/vevRjk-9eJ4?si=Pv5KFCMVg-RavFqD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative; right: 50px;bottom: 20px;"></iframe>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/shape-4.png"
+            width="179"
+            height="359"
+            loading="lazy"
+            alt=""
+            class="shape shape-1"
+          />
+
+          <img
+            src="./assets/images/shape-9.png"
+            width="351"
+            height="462"
+            loading="lazy"
+            alt=""
+            class="shape shape-2"
+          />
+        </section>
+
+       
+        <!-- 
+        - #promotion
+      -->
+
+        <section class="section event bg-black-10" aria-label="event" id="promo" style="background-color: #4f3b1b; position: relative; bottom: 30px;">
+          <div class="container">
+            <p class="section-subtitle label-2 text-center">Available Promo</p>
+
+            <h2 class="section-title headline-1 text-center">Promotions</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="assets/images/promo1.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2022-09-15"
+                      >31/09/2023</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Food, Flavour
+                    </p>
+
+                    <h3 class="card-title title-2 text-center">
+                      25% off for weekends 12pm to 3pm
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="assets/images/promo 2.png"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2022-09-08"
+                      >31/10/2023</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Healthy Food
+                    </p>
+
+                    <h3 class="card-title title-2 text-center">
+                      Buy 1 Get 1 Free
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="assets/images/promo3.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2022-09-03"
+                      >15/10/2023</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                    <h3 class="card-title title-2 text-center">
+                     Free Delivery Above Rs 3500/= Orders
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="https://www.ubereats.com/lk/store/arthurs-pizzeria-colombo-05/ykaH_6y2QoeJrvT1VEL5Zw"  target="_blank" class="btn btn-primary">
+              <span class="text text-1">Order Now</span>
+
+              <span class="text text-2" aria-hidden="true">Uber Eats</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+   <!-- Include the footer -->
+   <div class="footer-placeholder" data-include="footer.html" style="position: relative; bottom: 50px;"></div>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
